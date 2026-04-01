@@ -3,4 +3,4 @@ pandas>=2.0.0
 plotly>=5.18.0
 requests>=2.31.0
 resend>=0.7.0
-extra-streamlit-components>=0.1.60
+streamlit-cookies-controller>=0.0.4
