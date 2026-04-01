@@ -702,7 +702,7 @@ def page_register():
 
         r_nombre = st.text_input("📝 Nombre(s)", key="r_nombre", placeholder="Juan Carlos")
         r_trat   = st.selectbox("¿Cómo le gusta que le digan?",
-                                 ["(ninguno)", "Señor", "Señora", "Dr.", "Dra."], key="r_trat")
+                                 ["(ninguno)", "Señor", "Señora", "Señorita", "Dr.", "Dra."], key="r_trat")
         r_user   = st.text_input("👤 Usuario", key="r_user", placeholder="juancarlos123  (mín. 3 caracteres)")
         r_email  = st.text_input("📧 Email (opcional)", key="r_email", placeholder="juan@email.com")
 
@@ -1730,7 +1730,7 @@ def page_profile():
         p_nombre = st.text_input("Nombre(s)", value=user.get("nombre",""),
                                   key="p_nombre", placeholder="Juan Carlos")
     with c2:
-        trats    = ["(ninguno)", "Señor", "Señora", "Dr.", "Dra."]
+        trats    = ["(ninguno)", "Señor", "Señora", "Señorita", "Dr.", "Dra."]
         cur_trat = user.get("tratamiento", "") or "(ninguno)"
         p_trat   = st.selectbox("¿Cómo le gusta que le digan?", trats,
                                  index=trats.index(cur_trat) if cur_trat in trats else 0,
