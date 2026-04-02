@@ -1,0 +1,16 @@
+[theme]
+primaryColor       = "#667eea"
+backgroundColor    = "#f0f2f6"
+secondaryBackgroundColor = "#ffffff"
+textColor          = "#1a1a2e"
+font               = "sans serif"
+
+[browser]
+# Oculta el menú hamburguesa y el toolbar superior
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+headless = true
